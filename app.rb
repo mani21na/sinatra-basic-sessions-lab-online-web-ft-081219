@@ -13,5 +13,6 @@ class App < Sinatra::Base
   post '/checkput' do
     session[:item] = params[:itme]
     @session = session
+    erb :index
   end
 end
