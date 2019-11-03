@@ -13,5 +13,5 @@ class App < Sinatra::Base
   post '/checkput' do
     session["item"] = params[:itme]
     @session = session
-  
+  end
 end
